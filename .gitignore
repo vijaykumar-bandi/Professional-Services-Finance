@@ -3,3 +3,20 @@
 .nexgile/greenfield/thread.jsonl
 .nexgile/greenfield/checkpoints/
 docs/input/
+
+# Application-local and generated files
+/.env
+/vendor/
+/node_modules/
+/public/build/
+/.phpunit.cache/
+/storage/*.key
+/storage/demo/
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/vite-*.hot
+/storage/logs/*
+/storage/testing/*.sqlite
+/demo-credentials.txt
+npm-debug.log*
