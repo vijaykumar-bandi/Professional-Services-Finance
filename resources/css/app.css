@@ -1,0 +1,12 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-page); color: var(--color-text); font-family: Inter, system-ui, sans-serif; }
+.skip-link { position: fixed; left: var(--space-4); top: -100px; z-index: 10; background: var(--color-surface); padding: var(--space-3); }
+.skip-link:focus { top: var(--space-4); outline: 3px solid var(--color-focus); }
+.topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-4) var(--space-6); background: var(--color-primary); color: white; }
+main { max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4); }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 600px) { .environment { display: none; } main { padding-top: var(--space-6); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }

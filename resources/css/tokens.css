@@ -1,0 +1,19 @@
+:root {
+  --color-page: #f4f7f9;
+  --color-surface: #ffffff;
+  --color-text: #17212b;
+  --color-muted: #52606d;
+  --color-primary: #0b6b5b;
+  --color-success: #16794a;
+  --color-error: #b42318;
+  --color-warning: #9a6700;
+  --color-border: #cbd5e1;
+  --color-focus: #2563eb;
+  --radius: 8px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+}
