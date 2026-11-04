@@ -1,6 +1,6 @@
 # Tasks: FirmLedger
 
-- [ ] 1. Project setup for Laravel, Vue and Windows
+- [x] 1. Project setup for Laravel, Vue and Windows
   - Create Laravel 13/PHP 8.4 and Vue 3/TypeScript/Vite with pinned lockfiles, temporary-SQLite tests, modular route discovery, shared accessible shell and design tokens, Mailpit, `/api/health`, `@playwright/test` as a dev dependency in `package.json`, an `e2e/` folder containing `.gitkeep` that the unit test runner excludes, `.env.example`, `.gitignore` and one passing PHP and Vue test. Add the Windows doctor, setup guide and `npm run dev` launcher that honours `PHP_BIN`, binds to `127.0.0.1`, prepares only the selected database, selects a free page port without stopping another process, checks health and prints the actual URL.
   - _Requirements: 14.1, 14.2, 14.3_
   - _Files: composer.json, composer.lock, package.json, package-lock.json, artisan, bootstrap/**, config/**, public/**, resources/js/app.ts, resources/js/App.vue, resources/js/components/shared/**, resources/js/router/**, resources/css/tokens.css, resources/css/app.css, routes/api.php, routes/web.php, scripts/dev/**, scripts/windows/**, tests/Unit/SetupTest.php, resources/js/__tests__/setup.test.ts, e2e/.gitkeep, .env.example, .gitignore, README.md, docs/windows-setup.md, phpunit.xml, vite.config.ts, vitest.config.ts, playwright.config.ts, tsconfig.json_
