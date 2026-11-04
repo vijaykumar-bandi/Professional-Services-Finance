@@ -7,6 +7,7 @@
   - _Verify: composer test -- --filter SetupTest_
   - _Verify: npm test -- setup.test.ts_
   - _Area: setup_
+  - _Issue: #1_
 
 - [ ] 2. Sign in, MFA and role work queues
   - Build sessions, password and TOTP sign-in, one-use recovery, throttling, expiry, deactivation, policy foundations and role-filtered work queues. Build the responsive Sign in and Work queue screens with Demo company banner, keyboard flow and the specified destination for every role.
@@ -16,6 +17,7 @@
   - _Verify: php artisan test tests/Feature/Identity_
   - _Verify: npm test -- identity_
   - _Area: ui_
+  - _Issue: #2_
 
 - [ ] 3. Finance configuration and master data
   - Build audited company, fiscal calendar, department, account, bank account, tax code, numbering, Client and Supplier APIs with normalised uniqueness, archival and posted snapshots. Build responsive searchable list-detail editors with Asia/Kolkata dates and Indian-grouped INR.
@@ -25,6 +27,7 @@
   - _Verify: php artisan test tests/Feature/Configuration_
   - _Verify: npm test -- configuration_
   - _Area: ui_
+  - _Issue: #3_
 
 - [ ] 4. Atomic posting, approvals and safe retries
   - Implement the sole ledger writer, approval engine, immutable balanced journals, request-key replay and conflict handling, short SQLite transactions, bounded lock retries, rollback hooks, allocation locking and mandatory notification outbox as shared services for all financial workflows.
@@ -33,6 +36,7 @@
   - _Files: app/Domain/Approvals/**, app/Domain/Posting/**, app/Domain/Notifications/**, app/Http/Controllers/Api/Approvals/**, app/Jobs/**, database/migrations/*_ledger_*, database/migrations/*_approval_*, database/migrations/*_outbox_*, routes/api/approvals.php, tests/Feature/Posting/**, tests/Unit/Posting/**_
   - _Verify: php artisan test tests/Feature/Posting tests/Unit/Posting_
   - _Area: api_
+  - _Issue: #4_
 
 - [ ] 5. Client invoices and receipts
   - Build invoice revisions, half-up paise totals, submission, independent approval, gap-free numbering, print, receipt allocation, settlement status and linked reversals. Build the finished responsive workspace with line editor, totals rail, print view, allocations, timeline and journal links.
@@ -42,6 +46,7 @@
   - _Verify: php artisan test tests/Feature/ClientBilling_
   - _Verify: npm test -- client-billing_
   - _Area: ui_
+  - _Issue: #5_
 
 - [ ] 6. Supplier bills and recorded payments
   - Build bill revisions, duplicate detection, private signature-verified attachment quarantine and scanning, payment allocation, approval threshold and linked reversals. Build the finished responsive workspace with evidence preview, scan feedback, unpaid-bill allocation and visible manager and Finance director stages.
@@ -51,6 +56,7 @@
   - _Verify: php artisan test tests/Feature/SupplierPayments_
   - _Verify: npm test -- supplier-payments_
   - _Area: ui_
+  - _Issue: #6_
 
 - [ ] 7. Manual journals, reversals and budgets
   - Build balanced manual journal, linked reversal and active monthly budget APIs through shared approval and posting. Build the responsive screen with running debit, credit and difference totals, original-journal context, mandatory reversal reason and budget editor.
@@ -60,6 +66,7 @@
   - _Verify: php artisan test tests/Feature/JournalsBudgets_
   - _Verify: npm test -- journals-budgets_
   - _Area: ui_
+  - _Issue: #7_
 
 - [ ] 8. Bank statement reconciliation
   - Build UTF-8 preview and import, repeat-safe statement rows, one-to-one suggestions and matches, outstanding explanations, continuity and finalization. Build the guided screen with desktop three-pane matching, phone tabs, row errors, sticky adjusted balance and guarded finalization.
@@ -69,6 +76,7 @@
   - _Verify: php artisan test tests/Feature/Banking_
   - _Verify: npm test -- bank-reconciliation_
   - _Area: ui_
+  - _Issue: #8_
 
 - [ ] 9. Financial reports and CSV exports
   - Build all six reports, journal drill-down, hardened all-row CSV export and capacity indexes. Build responsive report tabs, filters, summaries, date and close-version basis and desktop and phone detail views.
@@ -78,6 +86,7 @@
   - _Verify: php artisan test tests/Feature/Reporting_
   - _Verify: npm test -- financial-reports_
   - _Area: ui_
+  - _Issue: #9_
 
 - [ ] 10. Month-end close and reopen
   - Build close-readiness controls, independent close and reopen, atomic prerequisite recheck, period locking, report snapshots, reconciliation invalidation and version history. Build the responsive checklist and evidence screen with blocking items and actor and version timelines.
@@ -87,6 +96,7 @@
   - _Verify: php artisan test tests/Feature/Close_
   - _Verify: npm test -- month-end-close_
   - _Area: ui_
+  - _Issue: #10_
 
 - [ ] 11. Audit search and evidence
   - Build append-only redacted audit capture, protected forwarding and linked evidence queries. Build the read-only Audit search screen with event, actor, date, target and invoice filters and accessible document, decision, journal, reversal and report evidence.
@@ -96,6 +106,7 @@
   - _Verify: php artisan test tests/Feature/Audit_
   - _Verify: npm test -- audit-search_
   - _Area: ui_
+  - _Issue: #12_
 
 - [ ] 12. User, privacy and service administration
   - Build account provisioning, one-role assignment, deactivation, audited MFA recovery, retention decisions, operational status and mandatory alerts without report access. Build the User and service administration screen with no financial approval or business-figure controls.
@@ -105,6 +116,7 @@
   - _Verify: php artisan test tests/Feature/Administration_
   - _Verify: npm test -- administration_
   - _Area: ui_
+  - _Issue: #13_
 
 - [ ] 13. Northline Advisory demo company
   - Implement production-refusing, additive transactional demo seed and confirmed reset with stable fixture keys, dedicated SQLite and attachments, generated ignored credentials, exact five-role and April data, budget, two statement lines and two May documents. Verify the documented April balances and that a second load preserves changed work without duplicates.
@@ -113,6 +125,7 @@
   - _Files: app/Domain/Demo/**, app/Console/Commands/FirmLedgerDemoSeed.php, app/Console/Commands/FirmLedgerDemoReset.php, database/migrations/*_demo_seed_*, database/seeders/NorthlineAdvisorySeeder.php, resources/demo/**, tests/Feature/Demo/**, docs/demo-sign-in.md_
   - _Verify: php artisan test tests/Feature/Demo_
   - _Area: database_
+  - _Issue: #11_
 
 - [ ] 14. Backup and recovery controls
   - Build consistent SQLite and attachment backup, encryption, off-host transfer interface, ten-minute scheduling, 35-day retention, status and alerts. Build isolated restore-drill checks for integrity, hashes, audit sequence and financial controls, recording last recoverable write and elapsed recovery time.
@@ -121,6 +134,7 @@
   - _Files: app/Domain/Operations/Backup/**, app/Domain/Operations/Recovery/**, app/Console/Commands/FirmLedgerBackup.php, app/Console/Commands/FirmLedgerRestoreDrill.php, app/Console/Kernel.php, database/migrations/*_recovery_*, tests/Feature/Recovery/**, docs/recovery-runbook.md_
   - _Verify: php artisan test tests/Feature/Recovery_
   - _Area: database_
+  - _Issue: #14_
 
 - [ ] 15. Capacity and concurrency evidence
   - Add isolated fixtures for 25 named staff and 100,000 journal lines and a 10-active-user workload that records indexed-list, approval and posting p95, errors and lock waits and asserts the two-second and three-second targets.
@@ -130,6 +144,7 @@
   - _Verify: php artisan test tests/Capacity_
   - _Mode: tester_
   - _Area: api_
+  - _Issue: #15_
 
 - [ ] 16. Release acceptance and actual A01–A08 results
   - Build the Release acceptance screen and evidence API, then add and run A01–A08 Playwright and operations journeys against the working Vue application, Laravel API and file-backed SQLite on desktop and phone. Record actual Passed, Failed or Blocked results, release version, evidence, accessibility findings, verified local URL and blocking release decision; never convert an unchecked item into Passed.
@@ -140,6 +155,7 @@
   - _Verify: npm test -- release-acceptance_
   - _Mode: tester_
   - _Area: ui_
+  - _Issue: #16_
 
 - [ ] 17. Deployment setup for the dedicated Linux host
   - Add reproducible production build and host configuration for Nginx, PHP-FPM, restricted service accounts, queue and scheduler, TLS and network or VPN admission, local-SSD SQLite and private storage, migrations, production administrator bootstrap, monitoring, ten-minute backup schedule and rollback. Disable debug and demo loading, read secrets from environment variables and document deployment without performing it.
@@ -149,6 +165,7 @@
   - _Verify: php artisan test tests/Feature/Recovery tests/Feature/Demo_
   - _Mode: devops_
   - _Area: deploy_
+  - _Issue: #17_
 
 ## Assumptions
 
